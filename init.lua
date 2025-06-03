@@ -15,5 +15,12 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+-- Enable clipboard integration
+vim.opt.clipboard = "unnamedplus"
+vim.g.clipboard = 'osc52'
+
+-- setup default python3 host
+vim.g.python3_host_prog = "~/.pyenv/versions/capitalrx/bin/python3"
+
 require "lazy_setup"
 require "polish"
